@@ -27,8 +27,20 @@ const SpaceProvider = ({children}) => {
     fetchData()
   }
 
+  const loadMore = (type) => {
+    let nextOffset;
+    if(type === 'next') {
+      nextOffset = offset + limit;
+    }
+    if(type === 'prev') {
+      nextOffset = offset - limit
+    }
+    fetchData(limit, nextOffset)
+    setOffset(nextOffset)
+  }
+
   return (
-    <SpaceContext.Provider value={{filters, setFilters, capsules, handleSubmit, offset, totalItem, limit}}>
+    <SpaceContext.Provider value={{filters, setFilters, capsules, handleSubmit, loadMore, offset, totalItem, limit}}>
       {children}
     </SpaceContext.Provider>
   );
