@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Banner from './components/Banner';
+import CapsuleContainer from './components/CapsuleContainer';
+import Pagination from './components/Pagination';
+import SearchFilters from './components/SearchFilters';
+import { SpaceProvider } from './context/ContextProvider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SpaceProvider>
+      <div className="bg-black pb-10">
+        <Banner/>
+        <SearchFilters/>
+        <CapsuleContainer/>
+        <Pagination/>
+      </div>
+    </SpaceProvider>
   );
 }
 
