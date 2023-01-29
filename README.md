@@ -2,6 +2,8 @@
 
 This is a simple React web app that fetches and displays data about SpaceX's capsules from the SpaceX API.
 
+check it out [Video link](https://vimeo.com/793926615/079478e57c)
+
 ## Technologies Used
 
 - React
