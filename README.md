@@ -16,7 +16,7 @@ check it out [Video link](https://vimeo.com/793926615/079478e57c)
 To run this project locally, you will need to have Node.js and npm installed on your computer.
 
 1. Clone the repository
-### `git clone https://github.com/moobarrac/Mubarak-Frontend-Developer.git`
+### `git clone https://github.com/moobarrac/SpaceX-capsule.git`
 
 2. Install dependencies
 ### `npm install`
